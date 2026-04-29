@@ -1,3 +1,6 @@
+// Dynamic footer year
+document.getElementById('footer-year').textContent = new Date().getFullYear();
+
 // ================================
 // Smooth scroll for nav links
 // ================================
