@@ -96,13 +96,15 @@ function animateCounter(el, target, suffix = '') {
   }, step);
 }
 
-const statNums = document.querySelectorAll('.stat-num');
+// Only animate numeric stats — skip .stat-tech (text-only like "TS · Py · Node")
+const statNums = document.querySelectorAll('.stat-num:not(.stat-tech)');
 const statsObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       const el = entry.target;
       const raw = el.textContent.replace(/[^0-9.]/g, '');
       const suffix = el.textContent.replace(/[0-9.]/g, '');
+      if (!raw || isNaN(parseFloat(raw))) return; // extra safety guard
       animateCounter(el, raw, suffix);
       statsObserver.unobserve(el);
     }
@@ -110,3 +112,34 @@ const statsObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 
 statNums.forEach(el => statsObserver.observe(el));
+
+// ================================
+// Contact form AJAX submit
+// ================================
+const form = document.getElementById('contactForm');
+const successMsg = document.getElementById('formSuccess');
+const submitBtn = document.getElementById('submitBtn');
+
+if (form) {
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    submitBtn.textContent = 'Enviando...';
+    submitBtn.disabled = true;
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        form.reset();
+        successMsg.classList.add('show');
+        submitBtn.textContent = '¡Enviado!';
+      } else {
+        submitBtn.textContent = 'Error. Intenta por email.';
+      }
+    } catch {
+      submitBtn.textContent = 'Error. Intenta por email.';
+    }
+  });
+}

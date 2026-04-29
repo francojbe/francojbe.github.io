@@ -509,8 +509,76 @@ ul { list-style: none; }
   pointer-events: none;
 }
 .contact-inner h2 { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1rem; }
-.contact-inner p { color: var(--text-muted); font-size: 1.05rem; margin-bottom: 2.5rem; }
+.contact-inner > p { color: var(--text-muted); font-size: 1.05rem; margin-bottom: 2rem; }
+
+/* Form */
+.contact-form {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.form-group { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1rem; }
+.form-group label { font-size: 0.85rem; font-weight: 600; color: var(--text-muted); }
+.form-group input,
+.form-group select,
+.form-group textarea {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.92rem;
+  transition: border-color 0.2s;
+  width: 100%;
+  resize: vertical;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder { color: #555; }
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--purple);
+  box-shadow: 0 0 0 3px rgba(139,92,246,0.1);
+}
+.form-group select option { background: #111; color: var(--text); }
+.btn-block { width: 100%; justify-content: center; }
+.form-success {
+  display: none; margin-top: 1rem;
+  color: #4ade80; font-size: 0.9rem; text-align: center;
+}
+.form-success.show { display: block; }
+
+/* Divider */
+.contact-divider {
+  display: flex; align-items: center; gap: 1rem;
+  margin: 1.5rem 0; color: var(--text-muted); font-size: 0.85rem;
+}
+.contact-divider::before,
+.contact-divider::after {
+  content: ''; flex: 1;
+  height: 1px; background: var(--border);
+}
+
+/* CTA buttons */
 .contact-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+.btn-workana {
+  background: #00b14f;
+  color: white;
+  border: none;
+  box-shadow: 0 4px 20px rgba(0,177,79,0.25);
+}
+.btn-workana:hover {
+  background: #00963f;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(0,177,79,0.4);
+}
 
 /* ================================
    FOOTER
@@ -547,4 +615,5 @@ footer {
   .stat-divider { display: none; }
   .skills-grid { grid-template-columns: 1fr; }
   .avatar-ring { width: 170px; height: 170px; }
+  .form-row { grid-template-columns: 1fr; }
 }
