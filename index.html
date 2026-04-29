@@ -1,136 +1,324 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portafolio Profesional de Franco JBE - Full-Stack Developer & Especialista en IA y Automatización.">
-    <title>Franco JBE | Full-Stack & AI Developer</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Portafolio de Franco JBE — Desarrollador Full-Stack especializado en IA, automatización y aplicaciones web modernas. Disponible en Workana."/>
+  <meta property="og:title" content="Franco JBE | Full-Stack & AI Developer"/>
+  <meta property="og:description" content="Construyo soluciones de IA, bots inteligentes y automatizaciones para empresas. Disponible en Workana."/>
+  <meta property="og:url" content="https://francojbe.github.io"/>
+  <title>Franco JBE | Full-Stack & AI Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <div class="bg-glow"></div>
-    <div class="bg-glow bg-glow-2"></div>
 
-    <nav class="glass-nav">
-        <div class="nav-content">
-            <div class="logo">Franco<span>.dev</span></div>
-            <ul class="nav-links">
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#about">Sobre Mí</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#contact" class="btn-primary">Contáctame</a></li>
-            </ul>
+  <!-- Ambient background orbs -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Franco<span>.dev</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact" class="nav-cta">Contáctame</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about">Sobre mí</a>
+      <a href="#services">Servicios</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#contact">Contáctame</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <div class="badge">
+            <span class="badge-dot"></span>
+            Disponible para proyectos freelance
+          </div>
+          <h1>Construyo soluciones de <span class="grad">IA</span> y <span class="grad">Automatización</span> que generan resultados reales</h1>
+          <p class="hero-sub">Desarrollador Full-Stack con foco en bots inteligentes, APIs robustas, web scraping y plataformas web modernas. Más de 20 proyectos entregados.</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">Ver proyectos <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            <a href="https://github.com/francojbe" target="_blank" rel="noopener" class="btn btn-ghost">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              GitHub
+            </a>
+          </div>
         </div>
-    </nav>
+        <div class="hero-avatar">
+          <div class="avatar-ring">
+            <img src="assets/avatar.png" alt="Franco JBE - Desarrollador Full-Stack" class="avatar-img"/>
+          </div>
+          <div class="avatar-badge-pill">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            +20 proyectos
+          </div>
+        </div>
+      </div>
+      <!-- Stats bar -->
+      <div class="stats-bar">
+        <div class="stat"><span class="stat-num">24</span><span class="stat-label">Repos públicos</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Años de experiencia</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">3</span><span class="stat-label">Lenguajes principales</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Proyectos en producción</span></div>
+      </div>
+    </section>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <div class="badge">Disponible para Freelance en Workana</div>
-                <h1 class="hero-title">Construyo soluciones de <span class="text-gradient">Inteligencia Artificial</span> y <span class="text-gradient">Automatización</span></h1>
-                <p class="hero-subtitle">Desarrollador Full-Stack especializado en flujos de trabajo inteligentes, web scraping y plataformas web modernas.</p>
-                <div class="hero-cta">
-                    <a href="#projects" class="btn-primary btn-lg">Ver mis proyectos <i data-lucide="arrow-right"></i></a>
-                    <a href="https://github.com/francojbe" target="_blank" class="btn-secondary btn-lg"><i data-lucide="github"></i> GitHub</a>
-                </div>
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="section-label">// sobre mí</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>Desarrollador apasionado por la <span class="grad">automatización inteligente</span></h2>
+          <p>Combino <strong>TypeScript</strong>, <strong>Python</strong> y las últimas APIs de IA para construir soluciones que realmente ahorran tiempo y dinero a mis clientes. Me especializo en flujos de trabajo automatizados, bots inteligentes y aplicaciones web de alto rendimiento.</p>
+          <p>Trabajo con startups, agencias y empresas que necesitan integrar IA en sus procesos sin depender de soluciones genéricas — todo a medida, escalable y en producción.</p>
+          <a href="mailto:francojbe@gmail.com" class="btn btn-primary">Hablemos del proyecto</a>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">🐍</div>
+            <div class="skill-name">Python</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">⚡</div>
+            <div class="skill-name">TypeScript</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🤖</div>
+            <div class="skill-name">AI / Bots</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🔗</div>
+            <div class="skill-name">APIs & REST</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:92%"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🕷️</div>
+            <div class="skill-name">Web Scraping</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🐋</div>
+            <div class="skill-name">Docker / DevOps</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="section-label">// servicios</div>
+      <h2 class="section-title">¿En qué puedo ayudarte?</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🧠</div>
+          <h3>Integración de IA</h3>
+          <p>Chatbots personalizados, proxy de APIs de IA con fallback, agentes inteligentes para tu negocio o plataforma.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">⚙️</div>
+          <h3>Automatización de Procesos</h3>
+          <p>Flujos n8n, web scraping para CRM, bots de Telegram/WhatsApp y automatizaciones con SII u otras instituciones.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🌐</div>
+          <h3>Desarrollo Web Full-Stack</h3>
+          <p>Landing pages optimizadas, dashboards administrativos, marketplaces y aplicaciones web escalables con TypeScript.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📊</div>
+          <h3>Dashboards & Reporting</h3>
+          <p>Paneles de control en tiempo real, reportes automatizados y visualización de datos para equipos de gestión.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="section-label">// proyectos</div>
+      <h2 class="section-title">Trabajo real, resultados reales</h2>
+
+      <!-- Featured -->
+      <article class="project-featured reveal">
+        <div class="project-featured-img">
+          <img src="assets/api-ia-free.png" alt="API-IA-FREE Dashboard — balanceo de carga entre IAs gratuitas"/>
+        </div>
+        <div class="project-featured-info">
+          <div class="project-chip featured-chip">⭐ Proyecto Ancla</div>
+          <div class="project-tags">
+            <span class="tag">TypeScript</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Load Balancing</span>
+            <span class="tag">IA</span>
+          </div>
+          <h3>API-IA-FREE — Proxy Inteligente de IA</h3>
+          <p>API proxy de alta disponibilidad con sistema <strong>Round-Robin</strong> para distribuir carga entre múltiples IAs gratuitas. Incluye sistema de <strong>fallback automático</strong> ante caídas, asegurando 99.9% de uptime sin costo de API.</p>
+          <ul class="project-bullets">
+            <li>✅ Balanceo de carga entre N proveedores de IA</li>
+            <li>✅ Fallback automático ante errores o rate limits</li>
+            <li>✅ Interfaz unificada para cualquier cliente</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/francojbe/API-IA-FREE" target="_blank" rel="noopener" class="btn btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              Ver código
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Projects grid -->
+      <div class="projects-grid">
+
+        <article class="project-card reveal">
+          <div class="project-card-img">
+            <img src="assets/efi-contable.png" alt="EFI-Contable-IA Bot"/>
+          </div>
+          <div class="project-card-body">
+            <div class="project-tags">
+              <span class="tag tag-green">Python</span>
+              <span class="tag tag-green">IA Bot</span>
             </div>
-        </section>
+            <h3>EFI-Contable-IA</h3>
+            <p>Bot de IA especializado en consultas contables integrado en la plataforma EFinnovation. Responde preguntas tributarias, genera resúmenes y ayuda a PYMES con sus finanzas.</p>
+            <a href="https://github.com/francojbe/EFI-Contable-IA" target="_blank" rel="noopener" class="project-link">Ver en GitHub →</a>
+          </div>
+        </article>
 
-        <section id="tech-stack" class="tech-stack">
-            <p>Tecnologías que utilizo día a día</p>
-            <div class="tech-icons">
-                <span class="tech-tag"><i data-lucide="file-code-2"></i> TypeScript</span>
-                <span class="tech-tag"><i data-lucide="terminal"></i> Python</span>
-                <span class="tech-tag"><i data-lucide="server"></i> Node.js</span>
-                <span class="tech-tag"><i data-lucide="bot"></i> AI & Bots</span>
-                <span class="tech-tag"><i data-lucide="database"></i> Scraping & APIs</span>
+        <article class="project-card reveal">
+          <div class="project-card-img">
+            <img src="assets/scraping-crm.png" alt="Automatización CRM con Python y n8n"/>
+          </div>
+          <div class="project-card-body">
+            <div class="project-tags">
+              <span class="tag tag-orange">Python</span>
+              <span class="tag tag-orange">n8n</span>
+              <span class="tag tag-orange">Scraping</span>
             </div>
-        </section>
+            <h3>CRM Scraping Automático</h3>
+            <p>Pipeline de extracción de datos con Python conectado a n8n para captación automatizada de leads. Alimenta el CRM en tiempo real con datos verificados y listos para seguimiento.</p>
+            <a href="https://github.com/francojbe/phyton-n8n" target="_blank" rel="noopener" class="project-link">Ver en GitHub →</a>
+          </div>
+        </article>
 
-        <section id="projects" class="projects">
-            <div class="section-header">
-                <h2>Proyectos Destacados</h2>
-                <p>Automatización + IA + Desarrollo Full-Stack</p>
+        <article class="project-card reveal">
+          <div class="project-card-img project-card-img-placeholder pla-sii">
+            <div class="placeholder-icon">🏛️</div>
+            <div class="placeholder-label">Automatización SII Chile</div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Automatización</span>
             </div>
+            <h3>Api-SII — Automatizaciones Tributarias</h3>
+            <p>Herramientas en Python para automatizar interacciones con el Servicio de Impuestos Internos de Chile. Permite consultas, generación de reportes y validaciones sin intervención manual.</p>
+            <a href="https://github.com/francojbe/Api-SII" target="_blank" rel="noopener" class="project-link">Ver en GitHub →</a>
+          </div>
+        </article>
 
-            <div class="projects-grid">
-                <!-- Project 1: El Proyecto "Ancla" -->
-                <article class="project-card featured-project">
-                    <div class="project-image">
-                        <!-- Placeholder for screenshot -->
-                        <div class="image-placeholder"><i data-lucide="network"></i> Dashboard API-IA-FREE (Screenshot)</div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-tags">
-                            <span class="tag">TypeScript</span>
-                            <span class="tag">IA</span>
-                            <span class="tag">Load Balancing</span>
-                        </div>
-                        <h3>API-IA-FREE Proxy</h3>
-                        <p>API Proxy de alto rendimiento con sistema round-robin para distribución de carga entre múltiples IAs gratuitas. Cuenta con sistema de backup/fallback para asegurar un 99.9% de uptime frente a caídas de los proveedores principales.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/francojbe/API-IA-FREE" target="_blank" class="project-link"><i data-lucide="github"></i> Código</a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 2 -->
-                <article class="project-card">
-                    <div class="project-image">
-                         <div class="image-placeholder"><i data-lucide="calculator"></i> Bot Contable</div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">IA Bot</span>
-                        </div>
-                        <h3>EFI-Contable-IA</h3>
-                        <p>Bot especializado impulsado por inteligencia artificial para resolver consultas contables, integrado directamente en la plataforma principal de la agencia EFinnovation.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/francojbe/EFI-Contable-IA" target="_blank" class="project-link"><i data-lucide="github"></i> Código</a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 3 -->
-                <article class="project-card">
-                    <div class="project-image">
-                         <div class="image-placeholder"><i data-lucide="bot"></i> n8n Automation</div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Scraping</span>
-                            <span class="tag">n8n</span>
-                        </div>
-                        <h3>Automated CRM Scraping</h3>
-                        <p>Flujo de trabajo de extracción de datos (web scraping) programado con Python, conectado a un CRM para la automatización de captación de leads en tiempo real.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/francojbe/phyton-n8n" target="_blank" class="project-link"><i data-lucide="github"></i> Código</a>
-                        </div>
-                    </div>
-                </article>
+        <article class="project-card reveal">
+          <div class="project-card-img project-card-img-placeholder pla-bar">
+            <div class="placeholder-icon">🍸</div>
+            <div class="placeholder-label">Sistema de Registro para Bares</div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-tags">
+              <span class="tag tag-blue">TypeScript</span>
+              <span class="tag tag-blue">React</span>
             </div>
-        </section>
+            <h3>RegistBar</h3>
+            <p>Plataforma completa de registro y control de ventas para bares y restaurantes. Gestión de mesas, productos y caja en tiempo real con interfaz táctil.</p>
+            <a href="https://github.com/francojbe/RegistBar" target="_blank" rel="noopener" class="project-link">Ver en GitHub →</a>
+          </div>
+        </article>
 
-        <section id="contact" class="contact">
-            <div class="contact-box glass-panel">
-                <h2>¿Tienes un proyecto en mente?</h2>
-                <p>Estoy disponible para proyectos freelance en Workana. Hagamos realidad tu próxima automatización o integración de IA.</p>
-                <a href="https://www.workana.com/freelancer/tus-datos-aqui" target="_blank" class="btn-primary btn-lg mt-4">Contrátame en Workana</a>
+        <article class="project-card reveal">
+          <div class="project-card-img project-card-img-placeholder pla-receipt">
+            <div class="placeholder-icon">🧾</div>
+            <div class="placeholder-label">Receipt Flow Studio</div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-tags">
+              <span class="tag tag-blue">TypeScript</span>
+              <span class="tag tag-blue">SaaS</span>
             </div>
-        </section>
-    </main>
+            <h3>Receipt Flow Studio</h3>
+            <p>Aplicación para digitalizar y gestionar flujos de recibos y comprobantes, automatizando la contabilidad básica de PYMES con integración a sistemas externos.</p>
+            <a href="https://github.com/francojbe/receipt-flow-studio" target="_blank" rel="noopener" class="project-link">Ver en GitHub →</a>
+          </div>
+        </article>
 
-    <footer>
-        <p>© 2026 Franco JBE. Todos los derechos reservados.</p>
-    </footer>
+        <article class="project-card reveal">
+          <div class="project-card-img project-card-img-placeholder pla-efinno">
+            <div class="placeholder-icon">🏢</div>
+            <div class="placeholder-label">EFinnovation Agency Web</div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-tags">
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">JS</span>
+            </div>
+            <h3>EFinnovation — Agencia de IA</h3>
+            <p>Sitio web principal de la agencia EFinnovation. Landing page optimizada para captación de clientes con integración de chatbot de IA, formularios de contacto y páginas de servicio.</p>
+            <a href="https://github.com/francojbe/Efinnovation" target="_blank" rel="noopener" class="project-link">Ver en GitHub →</a>
+          </div>
+        </article>
 
-    <script src="script.js"></script>
-    <script>
-      lucide.createIcons();
-    </script>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="contact-inner">
+        <div class="contact-glow"></div>
+        <div class="section-label">// contacto</div>
+        <h2>¿Listo para empezar?</h2>
+        <p>Estoy disponible para proyectos freelance en Workana, trabajo directo y colaboraciones. Cuéntame tu idea y te respondo en menos de 24 horas.</p>
+        <div class="contact-actions">
+          <a href="mailto:francojbe@gmail.com" class="btn btn-primary btn-lg">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            francojbe@gmail.com
+          </a>
+          <a href="https://github.com/francojbe" target="_blank" rel="noopener" class="btn btn-ghost btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"/></svg>
+            Ver GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span class="nav-logo">Franco<span>.dev</span></span>
+      <p>© 2026 Franco JBE. Hecho con ☕ y mucho TypeScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
